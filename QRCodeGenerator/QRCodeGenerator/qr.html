@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="qr.css">
+    <script type="text/javascript" src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+
+<body>
+    <div class="box" style="background-color: skyblue; margin-top: 5rem; margin-bottom: 5rem;">
+        <div class="qr-header">
+            <h1 class="heading">QR Code Generator</h1><br>
+            <form>
+                <label for="qr-Text">Enter text:</label>
+                <input type="text" id="qr-Text" name="qr-Text"
+                    style="padding: 0.4rem; font-weight: 600; border-radius: 5px;">
+                <br><br>
+                <label for="sizes">Select size:</label>
+                <select id="sizes" style="padding: 0.3rem; background-color: coral; border-radius: 5px;">
+                    <option value="100">100x100</option>
+                    <option value="200">200x200</option>
+                    <option value="300">300x300</option>
+                </select>
+                <br>
+                <div style="display: flex; justify-content: center; align-items: center; margin-top: 4rem;">
+                    <button type="button" id="generateBtn"
+                        style="padding: 1rem; background-color: aqua; border-radius: 8px;">Generate</button>&emsp;
+                    <button type="button" id="dounloadBtn"
+                        style="padding: 1rem; background-color: aqua; border-radius: 8px;">Download</button>
+                </div>
+            </form>
+            <div class="qr-body" style="display: flex; justify-content: center; align-items: center; margin-top: 2rem;">
+            </div>
+        </div>
+    </div>
+
+    <script src="qr.js"></script>
+</body>
+
+</html>
